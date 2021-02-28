@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\DB;
+
+use App\Models\Post;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,5 +18,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+Route::get('/post/create' , function(){
+    DB::table('post')->insert([
+        'ID' => '21013567',
+        'title' => 'Planet',
+        'body' => 'A planet is a general term given to a relatively large mass of accreted matter in orbit around a star .',
+        'timestamps' => '28 February'
+    ]);
 });
 
