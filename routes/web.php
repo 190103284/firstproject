@@ -28,3 +28,7 @@ Route::get('/post/create' , function(){
     ]);
 });
 
+Route::get('/post' , function(){
+    $post = Post::find(21013567);
+    return $post;
+});
