@@ -7,6 +7,13 @@
     <title>Create</title>
 </head>
 <body>
-    
+    <form method="POST" action="{{ route('add_client')}}">
+    @csrf
+    <input type="text" name="id" placeholder="id">
+    <input type="text" name="title" placeholder="title">
+    <input type="text" name="body" placeholder="body">
+    <input type="text" name="timestamps" placeholder="timestamps">
+    <button type="submit">Add</button>
+    </form>
 </body>
 </html>

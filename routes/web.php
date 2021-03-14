@@ -33,4 +33,14 @@ Route::get('/post' , function(){
     $post = Post::find(21013567);
     return $post;
 });
-Route::get('post', [BlogController::class ,'test']);
+
+
+Route::get('post', [BlogController::class ,'index']);
+
+Route::get('blog/create' , function( ){
+    return view('blog.create');
+});
+
+
+
+Route::post('blog/create' , [BlogController::class, 'store'])->name('add_client');
