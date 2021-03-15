@@ -23,4 +23,12 @@ class BlogController extends Controller
         ]);
         return back();
     }
+        public function get_post($id){
+        $postss = Post::find($id);
+
+        if($postss == null)
+        return response(404);
+
+        return view ('blog.detail')->with(['post' => $postss]);
+    }
 }

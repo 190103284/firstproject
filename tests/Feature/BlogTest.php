@@ -19,4 +19,29 @@ class BlogTest extends TestCase
 
         $response->assertStatus(200);
     }
+
+    
+    
+    
+    public function test_blog_get_id_request(){
+
+        $response = $this->get('/post/21013567');
+
+        $response->assertStatus(200);
+    }
+
+    public function test_blog_get_unexisted_value(){
+        
+        $response = $this->get('/post/25149876');
+
+        $response->assertStatus(404);
+    }
+
+    public function test_blog_check_response(){
+
+        $response = $this->get('/post/21013567');
+
+        $response->assertViewHas('post');
+
+    }
 }
