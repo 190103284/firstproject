@@ -27,7 +27,7 @@ class BlogController extends Controller
         $postss = Post::find($id);
 
         if($postss == null)
-        return response(404);
+        return response(['message' => 'this id does not exist'],404);
 
         return view ('blog.detail')->with(['post' => $postss]);
     }
