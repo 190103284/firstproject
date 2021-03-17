@@ -20,3 +20,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('/posts' , [ApiController::class , 'test']);
+Route::post('/posts/details' ,[ApiController::class , 'accept_post_id']);

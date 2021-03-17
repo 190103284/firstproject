@@ -15,4 +15,17 @@ class ApiController extends Controller
 
         return response($tests, 200);
     }
+    //Return post which id is equal to post_id
+
+    public function accept_post_id(Request $request){
+        $post = Post::find($request->post_id);
+
+        if ($post == null){
+            return response (['message' => 'There is no such post'] , 404);
+        }
+     
+        return response ($post , 200);
+    }
 }
+
+
