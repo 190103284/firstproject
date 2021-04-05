@@ -47,7 +47,9 @@ Route::get('blog/create' , function( ){
 });
 
 
-
 Route::post('blog/create' , [BlogController::class, 'store'])->name('add_client');
 
 Route::get('post/{id}' , [BlogController::class , 'get_post']);
+
+Route::get('/email', 'EmailController@create');
+Route::post('/email', 'EmailController@sendEmail')->name('send.email');
