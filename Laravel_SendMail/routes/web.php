@@ -19,3 +19,12 @@ Route::get('/', function () {
 
 Route::get('/email', 'EmailController@create');
 Route::post('/email', 'EmailController@sendEmail')->name('send.email');
+
+
+
+
+
+Route::get('/emails', 'EmailsController@index')->name('emails');
+Route::post('/emails/send', 'EmailsController@send')->name('emails.send');
+
+

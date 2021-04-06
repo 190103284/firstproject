@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
+<title>Send Email</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Mail Send in Laravel Example</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Courgette|Pacifico:400,700">
@@ -65,59 +66,62 @@ body {
 </style>
 </head>
 <body>
+<!--<form action ="{{ route('emails.send') }} " method="POST" enctype="multipart/form-data">
+
+@csrf
+
+<input type = "text" name="name">
+<input type = "file" name="image">
+<br>
+<input type = "submit" value="Submit">
+</form>-->
 <div class="container">
 	<div class="row">
 		<div class="col-md-8 mx-auto">
-			<div class="contact-form">
+<div class="contact-form">
 				<h1>Send information about you</h1>
-                @if(session()->has('message'))
-                    <div class="alert alert-success">
-                        {{ session()->get('message') }}
-                    </div>
-                @endif
-                <form action="{{ route('send.email') }}" method="post">
+            
+                <form action="{{ route('emails.send') }}" method="post" enctype="multipart/form-data" >
                 @csrf
-                
-					<div class="row">
+
+                <div class="row">
 						<div class="col-sm-6">
 							<div class="form-group">
 								<label for="inputName">Name</label>
 								<input type="text" name="name" class="form-control" placeholder="Enter Name">
-                                @error('name')
-                                <span class="text-danger"> {{ $message }} </span>
-                                @enderror
+                                
+                                <span class="text-danger"></span>
+                                </div>
 							</div>
-						</div>
-						<div class="col-sm-6">
-							<div class="form-group">
-								<label for="inputEmail">Surname</label>
-								<input type="email" name="surname" class="form-control" placeholder="Enter Surname">
-                                @error('surname')
-                                <span class="text-danger"> {{ $message }} </span>
-                                @enderror
-							</div>
-						</div>
-					</div>            
+                            <div class="col-sm-6">
+                               <div class="form-group">
+								<label for="inputSurame">Surname</label>
+								<input type="text" name="surname" class="form-control" placeholder="Enter Surname">
+                                
+                                <span class="text-danger"></span>
+                            </div>
+                            </div>
+                            </div>
+						
+						           
 					<div class="form-group">
-						<label for="inputSubject">Email</label>
-                        <input type="text" name="email" class="form-control" placeholder="Enter email">
-                        @error('email')
-                        <span class="text-danger"> {{ $message }} </span>
-                        @enderror
-					</div>
-					<form>
-  <div class="form-group">
-    <label for="exampleFormControlFile1">Upload your profile photo </label>
-    <input type="file" name="image" class="form-control-file" id="exampleFormControlFile1">
-  </div>
-</form>
+						       <label for="inputEmail">Email</label>
+                               <input type="text" name="email" class="form-control" placeholder="Enter email">
+                      
+                        <span class="text-danger">  </span>
+                    </div>
+					
+                   <div class="form-group">
+                                <label for="exampleFormControlFile1">Upload your profile photo </label>
+                        <br>
+
+                   <input type="file" name="image" class="form-control-file" id="exampleFormControlFile1">
+                        </div>
+
 					<div class="text-center">
 						<button type="submit" class="btn btn-primary"> Send</button>
 					</div>            
 				</form>
 			</div>
-		</div>
-	</div>
-</div>
 </body>
 </html>
