@@ -12,12 +12,14 @@ class EmailsController extends Controller
     public function send(Request $request){
        
         $data = [
+
             'name' => $request->name,
+            'surname' => $request -> surname,
             'image' => $request->file('image')
         ];
         $to = 'sabinashaganova23@gmail.com';
         \Mail::to($to) -> send(new \App\Mail\EmailsMail($data));
 
-        echo 'Sending will be successfully';
+        echo 'Your email successfully sent';
     }
 }

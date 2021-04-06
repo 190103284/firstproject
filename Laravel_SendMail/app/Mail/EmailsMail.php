@@ -31,10 +31,11 @@ class EmailsMail extends Mailable
     public function build()
     {
        $name = $this->data['name'];
+       $surname = $this->data['surname'];
 
       
        return $this->subject('Subject email')
-                   ->view('emails_template' , compact('name'))
+                   ->view('emails_template' , compact('name','surname'))
                    ->attach($this->data['image']->getRealPath(), [
                         'as' => $this->data['image']->getClientOriginalName()
                     ]);

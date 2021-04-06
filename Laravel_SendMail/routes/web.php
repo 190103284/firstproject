@@ -17,10 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/email', 'EmailController@create');
-Route::post('/email', 'EmailController@sendEmail')->name('send.email');
-
-
 
 
 

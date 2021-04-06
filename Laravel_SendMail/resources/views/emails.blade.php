@@ -34,13 +34,7 @@ body {
     min-height: 40px;
     border-radius: 2px;
 }
-.contact-form .form-control {
-    /*border-color: #e2c705;*/
-}
-.contact-form .form-control:focus {
-    /*border-color: #d8b012;
-    box-shadow: 0 0 8px #dcae10;*/
-}
+
 .contact-form .btn-primary, .contact-form .btn-primary:active {
     min-width: 200px;
     color: #EE3D40;
