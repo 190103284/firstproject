@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EmailsController;
+use App\Http\Controllers\ServiceController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -35,3 +36,5 @@ Route::get('post', [EmailsController::class ,'index']);
 
 
 Route::post('/store' , [EmailsController::class, 'store'])->name('addimage');
+
+Route::get("/website/{locale}" ,[ServiceController::class , "service"]);
