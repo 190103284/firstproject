@@ -6,6 +6,7 @@ use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\SecondController;
 use App\Http\Controllers\ThirdController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\PeopleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -75,3 +76,8 @@ Route::get('/emails/send/{lang}', function ($lang) {
 //One to one Relationship
 Route::get('/one_to_one',[UserController::class, 'insertRecord']);
 Route::get('/get_contact/{id}',[UserController::class, 'fetchContactByUser']);
+
+
+//One to many Relationship
+Route::get('/one_to_many', [PeopleController::class,'addPeople']);
+Route::get('/count_schemes/{id}',[PeopleController::class,'addSchemes']);
