@@ -5,7 +5,7 @@ use App\Http\Controllers\EmailsController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\SecondController;
 use App\Http\Controllers\ThirdController;
-
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -71,3 +71,7 @@ Route::get('/emails/send/{lang}', function ($lang) {
     App::setlocale($lang);
     return view('back');
 });
+
+//One to one Relationship
+Route::get('/one_to_one',[UserController::class, 'insertRecord']);
+Route::get('/get_contact/{id}',[UserController::class, 'fetchContactByUser']);
