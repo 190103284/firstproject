@@ -81,3 +81,4 @@ Route::get('/get_contact/{id}',[UserController::class, 'fetchContactByUser']);
 //One to many Relationship
 Route::get('/one_to_many', [PeopleController::class,'addPeople']);
 Route::get('/count_schemes/{id}',[PeopleController::class,'addSchemes']);
+Route::get('/get_schemes/{id}',[PeopleController::class , 'getSchemaByUser']);

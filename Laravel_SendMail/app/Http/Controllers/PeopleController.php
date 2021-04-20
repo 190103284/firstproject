@@ -22,9 +22,15 @@ class PeopleController extends Controller
 public function addSchemes($id){
     $people = People::find($id);
     $schemes = new Schemes();
-    $schemes->schema = "We received a schema from a client!";
+    $schemes->schema = "We receive second schema!";
     $schemes->count_of_schemes = "three";
     $people->schemes()->save($schemes);
     return "We received  schema from a client!";
 }
+
+public function getSchemaByUser($id){
+    $schemes = People::find($id)->schemes;
+    return $schemes;
+}
+
 }
