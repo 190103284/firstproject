@@ -4,11 +4,11 @@ namespace App\Http\Controllers;
 use App;
 use Illuminate\Http\Request;
 
-class ServiceController extends Controller
+class ThirdController extends Controller
 {
-    public function service()
+    public function back()
     {
         
-    return view('website');
+    return view('back');
     }
 }

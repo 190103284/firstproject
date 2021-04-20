@@ -14,7 +14,7 @@
 <style>    
 body {
     color: #000;
-    background-image: url("background.jpg");
+    background-image: url("https://thepridela-enki-v2.s3.amazonaws.com/wp-content/uploads/2019/06/Screen-Shot-2019-06-24-at-1.55.45-PM.png");
     font-family: "Roboto", sans-serif;
 }
 .contact-form {
@@ -26,6 +26,42 @@ body {
     font-family: 'Pacifico', sans-serif;
     margin: 0 0 50px;
     text-align: center;
+}
+a.button {
+  display: inline-block;
+  color: #fff;
+  padding: 12px;
+  border-radius: 3px;
+  text-decoration: none;
+  font-family: Tahoma;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 100;
+}
+
+a.button-red {
+  background-color: red;
+}
+
+a.button-green {
+  background-color: green;
+}
+.button{
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  padding: 14px 40px;
+  display: inline-block;
+  vertical-align: top;
+  text-transform: uppercase;
+  background-color: white;
+  cursor: pointer;
+  color: black;
+  margin-left: 30px;
+
+}
+.button:hover{
+  background-color: #E6E4E4;
 }
 .contact-form .form-group {
     margin-bottom: 20px;
@@ -69,28 +105,30 @@ body {
 <br>
 <input type = "submit" value="Submit">
 </form>-->
+<!--<a href=""  target="_blank"><button class="button">Back</button></a>-->
+
 <div class="container">
 	<div class="row">
 		<div class="col-md-8 mx-auto">
 <div class="contact-form">
-				<h1>Send information about you</h1>
-            
+				<h1>{{__('lang.data')}}</h1>
+                
                 <form action="{{ route('emails.send') }}" method="post" enctype="multipart/form-data" >
                 @csrf
 
                 <div class="row">
 						<div class="col-sm-6">
 							<div class="form-group">
-								<label for="inputName">Name</label>
-								<input type="text" name="name" class="form-control" placeholder="Enter Name">
+								<label for="inputName">{{__('lang.name')}}</label>
+								<input type="text" name="name" class="form-control" placeholder=>
                                 
                                 <span class="text-danger"></span>
                                 </div>
 							</div>
                             <div class="col-sm-6">
                                <div class="form-group">
-								<label for="inputSurame">Surname</label>
-								<input type="text" name="surname" class="form-control" placeholder="Enter Surname">
+								<label for="inputSurame">{{__('lang.surname')}}</label>
+								<input type="text" name="surname" class="form-control" placeholder>
                                 
                                 <span class="text-danger"></span>
                             </div>
@@ -99,21 +137,21 @@ body {
 						
 						           
 					<div class="form-group">
-						       <label for="inputEmail">Email</label>
-                               <input type="text" name="email" class="form-control" placeholder="Enter email">
+						       <label for="inputEmail">{{__('lang.email')}}</label>
+                               <input type="text" name="email" class="form-control" placeholder>
                       
                         <span class="text-danger">  </span>
                     </div>
 					
                    <div class="form-group">
-                                <label for="exampleFormControlFile1">Upload your profile photo </label>
+                                <label for="exampleFormControlFile1">{{__('lang.upload')}}</label>
                         <br>
 
                    <input type="file" name="image" class="form-control-file" id="exampleFormControlFile1">
                         </div>
 
 					<div class="text-center">
-						<button type="submit" class="btn btn-primary"> Send</button>
+						<button type="submit" class="btn btn-primary">{{__('lang.send')}}</button>
 					</div>            
 				</form>
 			</div>

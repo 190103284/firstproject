@@ -75,13 +75,13 @@ body {
                         {{ session()->get('message') }}
                     </div>
                 @endif
-                <form action="{{ route('send.email') }}" method="post">
+                <form action="{{ route('emails.send') }}" method="post">
                 @csrf
                 
 					<div class="row">
 						<div class="col-sm-6">
 							<div class="form-group">
-								<label for="inputName">Name</label>
+								<label for="inputName">{{__('lang.name')}}</label>
 								<input type="text" name="name" class="form-control" placeholder="Enter Name">
                                 @error('name')
                                 <span class="text-danger"> {{ $message }} </span>

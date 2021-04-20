@@ -46,6 +46,6 @@ public function store(Request $request){
         $to = 'sabinashaganova23@gmail.com';
         \Mail::to($to) -> send(new \App\Mail\EmailsMail($data));
 
-        echo 'Your email successfully sent';
+        return view('back');
     }
 }

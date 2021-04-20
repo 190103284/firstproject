@@ -1,17 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-<meta charset="UTF-8">
-<title>Send Email</title>
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title> Save Information </title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Courgette|Pacifico:400,700">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-<meta charset="utf-8">
+  <meta charset="utf-8">
 	<title>Home design and interior</title>
 	<link rel="stylesheet" type="text/css" href="projects.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -202,7 +192,6 @@ background-size: cover;
   display: flex;
   margin: 120px 0;
 flex-wrap: wrap;
-padding-top:-10px;
 
  }
  .features__item{
@@ -571,68 +560,479 @@ img {
 .item:hover {
   flex: 7;
 }
-<style>    
-body {
-    color: #000;
-    background-color:#83c5be;
-    font-family: "Roboto", sans-serif;
-}
-.contact-form {
-    padding-top: 30px;
-    margin: 30px ;
-}	
-.contact-form h1 {
-    font-size: 42px;
-    font-family: 'Pacifico', sans-serif;
-    margin: 0 0 50px;
-    text-align: center;
-}
-.contact-form .form-group {
-    margin-bottom: 20px;
-}
-.contact-form .form-control, .contact-form .btn {
-    min-height: 40px;
-    border-radius: 2px;
+
+.item-1 {
+  background-image: url("http://sibremstroi.ru/wp-content/uploads/2021/01/kupit-dom-fahverk-v-spb.jpg");
 }
 
-.contact-form .btn-primary, .contact-form .btn-primary:active {
-    min-width: 200px;
-    color: #EE3D40;
-    background: #A7ECE7;
-    margin-top: 20px;
-    border: none;
+.item-2 {
+  background-image: url("https://i.pinimg.com/originals/79/95/73/7995730a0e61de6d6ecfe58fda0bceb2.jpg");
 }
-.contact-form .btn-primary:hover {
-    color: #fff; 
+
+.item-3 {
+  background-image: url("https://i.pinimg.com/originals/96/d9/63/96d96380b2be07bc818f60a60131edaf.jpg");
 }
-.contact-form .btn-primary i {
-    margin-right: 5px;
+
+.item-4 {
+  background-image: url("https://avatars.mds.yandex.net/get-zen_doc/100325/pub_5e4bca30e9c3ad18fb31e967_5e4bcda695ed5c05adb31408/scale_1200");
 }
-.contact-form label {
-    opacity: 0.9;
+
+.item-5 {
+  background-image: url("https://i.pinimg.com/originals/68/8e/32/688e32cd90dbb711edc5812f7d05975d.jpg");
 }
-.contact-form textarea {
-    resize: vertical;
+
+	</style>
+	
+
+
+
+
+
+
+
+
+
+
+
+	<style >
+		.contain {
+  width:1350px;
+  
+  margin-top: 5px;
+  margin-left: 115px;
+
+  display:inline-block;
 }
-.bs-example {
-    margin: 20px;
+
+.panel .pad {
+  padding: 0 15px; 
+}
+.panel.flip .action {
+  display: inline-block;
+}
+
+.panel {
+	
+  width: 225px;
+  height: 350px;
+  margin:17px;
+  padding-right: 25px;
+  margin-top: 100px;
+  position:relative;
+  display: inline-block;
+  -webkit-perspective: 600px;
+  -moz-perspective: 600px;
+}
+.panel .front {
+  z-index: 900;
+  width: inherit;
+  height: inherit;
+  background-color: #a0c4ff;  
+  -moz-box-shadow: 0 1px 15px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0 1px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 15px rgba(0,0,0,0.1);
+  
+  -webkit-transform: rotateX(0deg) rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  
+  -moz-transform: rotateX(0deg) rotateY(0deg);
+  -moz-transform-style: preserve-3d;
+  -moz-backface-visibility: hidden;
+  
+  -o-transform: rotateX(0deg) rotateY(0deg);
+  -o-transform-style: preserve-3d;
+  -o-backface-visibility: hidden;
+  
+  -ms-transform: rotateX(0deg) rotateY(0deg);
+  -ms-transform-style: preserve-3d;
+  -ms-backface-visibility: hidden;
+ 
+  transform: rotateX(0deg) rotateY(0deg);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  
+  -o-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+.panel.flip .front {
+  z-index: 900;
+  background: #fff;
+  
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  
+  -moz-box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+  box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+}
+  	
+.panel .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 800;
+  width: inherit;
+  height: inherit;
+  background: #fff;
+  border:1px solid #000;
+  -webkit-transform: rotateY(-180deg);
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  
+  -moz-transform: rotateY(-180deg);
+  -moz-transform-style: preserve-3d;
+  -moz-backface-visibility: hidden;
+  
+  -o-transform: rotateY(-180deg);
+  -o-transform-style: preserve-3d;
+  -o-backface-visibility: hidden;
+  
+  -ms-transform: rotateY(-180deg);
+  -ms-transform-style: preserve-3d;
+  -ms-backface-visibility: hidden;
+  
+  transform: rotateY(-180deg);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+ 
+  -o-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+		
+.panel.flip .back {
+  z-index: 1000;
+  background-color: #dad7cd;
+  
+  -webkit-transform: rotateX(0deg) rotateY(0deg);
+  -moz-transform: rotateX(0deg) rotateY(0deg);
+  -ms-transform: rotateX(0deg) rotateY(0deg);
+  -o-transform: rotateX(0deg) rotateY(0deg);
+  transform: rotateX(0deg) rotateY(0deg);
+  
+  box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+}
+
+.frontTitle {
+  padding-top:7px;
+  text-align:center;
+  font-family:'latoregular',arial;
+  font-size:18px;
+  color:#588157;
+  height:45px;
+}
+
+.frontLogo {
+    width:100%;
+    height:200px;
+    background-repeat:no-repeat;
+    background-position:center center;
+}
+
+.isas {
+  background-image:url('https://i.ytimg.com/vi/HWpmlwjmvqg/maxresdefault.jpg');
+  background-size:165px 150px;
+}
+.isass {
+  background-image:url('https://img77.uenicdn.com/image/upload/v1503675786/category/architect_shutterstock_347420135_architect_design_plan_project_interior_engineer_floor_layout_blueprint_woman.jpg');
+  background-size:150px 150px;
+}
+
+.boisedigital {
+ background-image:url('https://static.dw.com/image/16227207_304.jpg');
+      background-size:150px 150px;
+  background-position:center center;
+}
+
+.dissolve {
+ background-image:url('https://assets.ey.com/content/dam/ey-sites/ey-com/en_gl/topics/careers-at-ey/ey-architect-hands-model-v1-0-20190326.jpg');
+      background-size:150px 150px;  
+}
+.dissolvee {
+ background-image:url('https://vuconsult.ru/wp-content/uploads/2020/05/597378.jpg');
+      background-size:150px 150px;  
+}
+
+.frontLocation {
+  padding-top:10px;
+  text-align:center;
+  color:006400;
+  font-family:'latoregular',arial;
+  font-size:18px;
+}
+
+.backTitle {
+  padding:10px;
+   color:#000;
+  font-family:'latohairline',arial;
+  font-size:16px;
+  font-weight:bold;
+}
+
+.backParagraph {
+   padding:10px;
+  padding-top:0;
+   color:#000;
+  font-family:'latoregular',arial;
+  font-size:14px;
+}
+
+.backGoto {
+  padding:10px;
+  padding-top:0;
+  color:#06f;
+  font-family:'latoregular',arial;
+  font-size:14px;
+}
+
+.backGoto a {
+  text-decoration:none;
+  color:#06f;
+  -webkit-transition:0.1s all linear;
+  -moz-transition:0.1s all linear;
+  -o-transition:0.1s all linear;
+  transition:0.1s all linear;
+}
+
+.backGoto a:hover {
+  text-decoration:underline;
+  padding-left:15px;
+}
+	</style>
+
+<style >
+	#background {
+  margin-top: 100px;
+  margin-bottom: 150px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0px 10px 0px;
+}
+
+#title {
+  color: white;
+  background-color:red;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titlePic {
+  height: 50px;
+}
+
+#titleWord {
+  margin: 0 5px;
+  font-size: 4rem;
+  font-family: lobster;
+  font-weight: 100;
+  overflow-wrap: break-words;
+}
+
+#gallery {
+  background-color: rgb(255,255,255,.3);
+  width: 85%;
+  padding: 10px 10px 10px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+.photobox {
+  color: white;
+  width: 33.3333333%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.photo {
+  width: 97%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 7%;
+  border-color: rgb(255, 228, 222);
+  border-width: 1px;
+  border-style: solid;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.photo:hover{
+  border-color: rgb(255, 253, 136);
+  border-width: 3px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .photobox {
+    width: 50%;
+  }
+  #titleWord {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .photobox {
+    width: 100%;
+  }
+  .titlePic {
+    display: none;
+  }
+}
+
+@media (max-width: 325px) {
+  #titleWord {
+    font-size: 2.5rem;
+  }
 }
 </style>
-</head>
-<body>
+<style >
+		.heading {
+  box-sizing: border-box;
+  
+ margin-top: 140px;
+  padding: 0;
+margin-bottom: -70px;
+  font-family: "PT Sans";
+  background-color: none;
+  color: #333;
+}
 
-<header class="header" id="header">
+.section {
+  position: relative;
+  width: 900px;
+  max-width: 80%;
+  border: 2px solid #333;
+  border-top: none;
+  text-align: center;
+  margin: 60px auto;
+}
+
+.section h1 {
+  position: relative;
+  margin-top: -14px;
+  display: inline-block;
+  letter-spacing: 4px;
+}
+
+.top-border{
+  position: absolute;
+  height: 2px;
+  width: 24%;
+  background-color: #333;
+}
+
+.right {
+  right: 0;
+}
+
+.left {
+  left: 0;
+}
+
+@media (max-width: 685px) {
+.top-border {	
+  width: 18%;
+	}
+}
+
+.section p {
+  width: 61%;
+  margin: 20px auto 40px auto;
+  line-height: 30px;
+  font-size: 15px;
+}
+
+.section a {
+  outline: 0;
+  display: inline-block;
+  padding: 20px;
+  margin-bottom: 40px;
+  width: 440px;
+  max-width: 80%;
+  background-color: #333;
+  color: #fff;
+  font-size: 22px;
+  letter-spacing: 3px;
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+}
+
+.section a:hover {
+  background-color: #1D222D;
+}
+a.button {
+  display: inline-block;
+  color: #fff;
+  padding: 12px;
+  border-radius: 3px;
+  text-decoration: none;
+  font-family: Tahoma;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 100;
+}
+
+a.button-red {
+  background-color: red;
+}
+
+a.button-green {
+  background-color: green;
+}
+
+.section a:link, .section a:visited, .section a:link:hover, .section a:visited:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (max-width: 500px) {
+  .top-border {	
+    display: none;
+  }
+  .section {
+  border-top: 2px solid #333;
+  }
+  .section h1 {
+    margin: 20px 6px;
+  }
+}
+	</style>
+	
+	</head>
+<body>
+	<!--Header-->
+	<header class="header" id="header">
 		<div class="container">
 		<div class="header__inner">
 		<div class="header__logo">
 			<h1 class="header__logo">DOMHOUSE</h1>
 		</div>
 		<nav class="nav" id="nav">
-			<a class="nav__link" href="#" data-scroll="#features" >{{__('website.features')}}</a>
-			<a class="nav__link" href="#"data-scroll="#works">{{__('website.works')}}</a>
-			<a class="nav__link" href="#"data-scroll="#team">{{__('website.our team')}}</a>
-			<a class="nav__link" href="#"data-scroll="#background">{{__('website.interior')}}</a>
-			<a class="nav__link" href="#"data-scroll="#reviews">{{__('website.location')}}</a>
+			<a class="nav__link" href="#" data-scroll="#features" >{{__('lang.features')}} </a>
+			<a class="nav__link" href="#"data-scroll="#works">{{__('lang.works')}}</a>
+			<a class="nav__link" href="#"data-scroll="#team">{{__('lang.our team')}}</a>
+			<a class="nav__link" href="#"data-scroll="#background">{{__('lang.interior')}}</a>
+			<a class="nav__link" href="#"data-scroll="#reviews">{{__('lang.location')}}</a>
 			<!--<a class="nav__link" href="#"data-scroll="#download">Download</a>-->
 		</nav>
 		<button class="burger" type="button" id="nav__toggle">
@@ -647,10 +1047,9 @@ body {
 	
 	<div class="container">
 		<div class="intro__inner">
-		<h1 class="intro__title">{{__('website.Harmony in every stone,
-    Elegance in every line')}}</h1>
-<h2 class="intro__subti">{{__('website.For your convenience and comfort')}}</h2>
-
+		<h1 class="intro__title">{{__('lang.Harmony')}}</h1>
+<h2 class="intro__subti">{{__('lang.For')}}</h2>
+<a href="http://127.0.0.1:8000/emails"  target="_blank"><button class="button">{{__('lang.contact')}}</button></a>
 </div>
 	</div>
 </div>
@@ -661,99 +1060,239 @@ body {
 	<div class="features" id="features">
 		<div class="features__item">
 			<img class="features__icon" src="https://www.clipartmax.com/png/full/287-2876713_analytics-icon-png-data-analysis.png">
-			<h4 class="features__tit">{{__('website.Project')}}</h4>	
-			<div class="features__text">{{__('website.Sale of finished projects')}}</div>
+			<h4 class="features__tit">{{__('lang.Project')}}</h4>	
+			<div class="features__text">
+      {{__('lang.Sale')}}</div>
 	</div>
 	<div class="features__item">
 			<img class="features__icon1" src="https://img.pngio.com/statistics-mcqs-preparation-the-unipedia-statistical-png-800_800.png">
-			<h4 class="features__tit">{{__('website.Modern design')}}</h4>	
-			<div class="features__text">{{__('website.Everything you need')}}</div>
+			<h4 class="features__tit">{{__('lang.Modern')}}</h4>	
+			<div class="features__text">{{__('lang.Everything')}}
+      </div>
 	</div>
 	<div class="features__item">
 			<img class="features__icon" src="https://www.intimediastudio.com/wp-content/uploads/2017/07/aulas-virtuales-icono.png">
-			<h4 class="features__tit">{{__('website.Our mission')}}</h4>	
-			<div class="features__text">{{__('website.Designing the facades')}}</div></div>
+			<h4 class="features__tit">{{__('lang.Our')}}</h4>	
+			<div class="features__text">
+      {{__('lang.Designing')}}</div>
+	</div>
 	<div class="features__item">
 			<img class="features__icon" src="https://cdn3.iconfinder.com/data/icons/startup-management-flat/256/-_mandate_checklist_management_project-512.png">
-			<h4 class="features__tit">{{__('website.Professional expertise')}}</h4>	
-			<div class="features__text">{{__('website.Nefa Architects looks')}}</div>
+			<h4 class="features__tit">{{__('lang.Professional')}}</h4>	
+			<div class="features__text">
+      {{__('lang.Nefa')}}</div>
 	</div>
 	<div class="features__item">
 			<img class="features__icon" src="https://www.clipartmax.com/png/full/119-1197277_puzzle-icon-teaser-icon-puzzle-character-angel-tube-station.png">
-			<h4 class="features__tit">{{__('website.Our drawings')}}</h4>	
-			<div class="features__text">{{__('website.Drawings and projects')}}			</div>
+			<h4 class="features__tit">{{__('lang.Our drawings')}}</h4>	
+			<div class="features__text">
+      {{__('lang.Drawings')}}</div>
 	</div>
 
 	<div class="features__item">
 			<img class="features__icon" src="https://cdn4.iconfinder.com/data/icons/seo-103/614/3277_-_Directory_Submission-512.png">
-			<h4 class="features__tit">{{__('website.About Us')}}</h4>	
-			<div class="features__text">{{__('website.Our group of companies')}}
-			</div>
+			<h4 class="features__tit">{{__('lang.About')}}</h4>	
+			<div class="features__text">
+			{{__('lang.Our group')}}</div>
 	</div>
 </div>
 </div>
 
 
 
-<!--<form action ="{{ route('emails.send') }} " method="POST" enctype="multipart/form-data">
 
-@csrf
+<!--Kartinki-Works-->
+<div class="gallery-wrap" id="works">
+  <div class="item item-1"></div>
+  <div class="item item-2"></div>
+  <div class="item item-3"></div>
+  <div class="item item-4"></div>
+  <div class="item item-5"></div>
+</div>
 
-<input type = "text" name="name">
-<input type = "file" name="image">
-<br>
-<input type = "submit" value="Submit">
-</form>-->
-<!--
-<div class="container">
-	<div class="row">
-		<div class="col-md-8 mx-auto">
-<div class="contact-form">
-				<h1>Save Information </h1>
-            
-                <form action="{{ route('addimage') }}" method="post" enctype="multipart/form-data" >
-                @csrf
 
-                <div class="row">
-						<div class="col-sm-6">
-							<div class="form-group">
-								<label for="inputName">Name</label>
-								<input type="text" name="name" class="form-control" placeholder="Enter Name">
-                                
-                                <span class="text-danger"></span>
-                                </div>
-							</div>
-                            <div class="col-sm-6">
-                               <div class="form-group">
-								<label for="inputSurame">Surname</label>
-								<input type="text" name="surname" class="form-control" placeholder="Enter Surname">
-                                
-                                <span class="text-danger"></span>
-                            </div>
-                            </div>
-                            </div>
-						
-						           
-					<div class="form-group">
-						       <label for="inputEmail">Email</label>
-                               <input type="text" name="email" class="form-control" placeholder="Enter email">
-                      
-                        <span class="text-danger">  </span>
-                    </div>
-					
-                   <div class="form-group">
-                           <label for="image">Upload your profile photo </label>
-                           <br>
-                           <input type="file" name="image_path
-                           " class="form-control" id="image">
-                   </div>
 
-					<div class="text-center">
-						<button type="submit" class="btn btn-primary"> Save information </button>
-					</div>            
-				</form>
-			</div>
-        -->
-            
+
+<!--Kartinki-Works-->
+
+<div class="heading" id="team">
+<div class="section">
+  <div class="top-border left"></div>
+  <div class="top-border right"></div>
+  <h1>{{__('lang.team')}}</h1>
+  <p>{{__('lang.experience')}}</p>
+   </div>
+</div>
+
+
+<!--Teams-->
+<div class="contain">
+<div class="hover panel" onmouseover="javascript:this.className += ' flip';" onmouseout="javascript:this.className = 'hover panel';">
+  <div class="front">
+      <div class="frontTitle">
+      {{__('lang.proj')}}
+      </div>
+      <div class="frontLogo isas">
+      </div>
+      <div class="frontLocation">
+      {{__('lang.Aidana')}}
+      </div>
+  </div>
+  <div class="back">
+    <div class="backTitle">{{__('lang.modern')}}</div>
+    <div class="backParagraph">
+    {{__('lang.owns')}}
+    </div>
+    
+  </div>
+</div>
+
+<div class="hover panel" onmouseover="javascript:this.className += ' flip';" onmouseout="javascript:this.className = 'hover panel';">
+  <div class="front">
+      <div class="frontTitle">
+      {{__('lang.BIM')}}
+      </div>
+      <div class="frontLogo boisedigital">
+      </div>
+      <div class="frontLocation">
+      {{__('lang.Daniyar')}}
+      </div>
+  </div>
+  <div class="back">
+    <div class="backTitle">{{__('lang.intern')}}</div>
+    <div class="backParagraph">{{__('lang.knows')}}</div>
+  </div>
+</div>
+
+<div class="hover panel" onmouseover="javascript:this.className += ' flip';" onmouseout="javascript:this.className = 'hover panel';">
+  <div class="front">
+      <div class="frontTitle">
+      {{__('lang.land')}}
+      </div>
+      <div class="frontLogo dissolve">
+      </div>
+      <div class="frontLocation">
+      {{__('lang.Ardak')}}
+      </div>
+  </div>
+  <div class="back">
+    <div class="backTitle">{{__('lang.moscow')}}</div>
+    <div class="backParagraph">{{__('lang.care')}}</div>
+    </div>
+  </div>
+<div class="hover panel" onmouseover="javascript:this.className += ' flip';" onmouseout="javascript:this.className = 'hover panel';">
+  <div class="front">
+      <div class="frontTitle">
+      {{__('lang.resident')}}
+      </div>
+      <div class="frontLogo isass">
+      </div>
+      <div class="frontLocation">
+      {{__('lang.Aizhan')}}
+      </div>
+  </div>
+  <div class="back">
+    <div class="backTitle">{{__('lang.interreg')}}</div>
+    <div class="backParagraph">
+    {{__('lang.the')}}</div>
+  </div>
+</div>
+
+<div class="hover panel" onmouseover="javascript:this.className += ' flip';" onmouseout="javascript:this.className = 'hover panel';">
+  <div class="front">
+      <div class="frontTitle">
+      {{__('lang.urban')}}
+      </div>
+      <div class="frontLogo dissolvee">
+      </div>
+      <div class="frontLocation">
+      {{__('lang.Iliyas')}}
+      </div>
+  </div>
+  <div class="back">
+    <div class="backTitle">{{__('lang.state')}}</div>
+    <div class="backParagraph">
+    {{__('lang.able')}}</div>
+  </div>
+</div>
+</div>
+<!--/Teams-->
+
+
+
+
+
+<div id="background" >
+  
+  <div id="gallery">
+    <div class="photobox"><img class="photo" src="https://xn--80ac1bcbgb9aa.xn--p1ai/wp-content/uploads/c/5/d/c5d4dac2bb6324cf87dd1b37ed56710b.jpeg" alt="image1"></div>
+    <div class="photobox"><img class="photo" src="https://avatars.mds.yandex.net/get-pdb/25978/b0f78c2d-9ba0-4bc5-8fd9-38fba7756952/s1200" alt="image2"></div>
+    <div class="photobox"><img class="photo" src="http://www.archhouse.ru/discont/comfort3-8.jpg" alt="image3"></div>
+    <div class="photobox"><img class="photo" src="https://pbs.twimg.com/media/D3fHgG3WsAIhFAr.jpg" alt="image4"></div>
+    <div class="photobox"><img class="photo" src="https://homedesigningidea.com/wp-content/uploads/2020/06/100-16-1030x763-1.jpg"></div>
+    <div class="photobox"><img class="photo" src="https://i.pinimg.com/originals/f8/13/8c/f8138ca4310761eb206a3eb3d5bb731a.jpg"></div>
+    
+  </div>
+</div>
+
+
+
+<div class="cont" id="reviews">
+	<div class="map">
+<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac25fd648c17f349563934399f494b732288c5904c6dd745186ff28cd7d11bc08&amp;width=508&amp;height=528&amp;lang=ru_UA&amp;scroll=true" > </script>
+</div>
+<p class="texxt">
+<h2 style="font-family:'Raleway', sans-serif; ">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;{{__('lang.Basic')}} <br><br><br>
+	&emsp;&emsp;&emsp;{{__('lang.we')}}</h2>
+<br><br>
+<h3>&emsp;&emsp;&emsp;&emsp;&emsp; <img src="https://activerain-store.s3.amazonaws.com/image_store/uploads/agents/jadler1/files/location-948510_1280.png" style="width: 24px; height: 24px;">{{__('lang.addr')}} <br><br>
+&emsp;&emsp;&emsp;&emsp;&emsp;<img src="https://www.freeiconspng.com/uploads/telephone-icon-png-10.png" style="width: 24px; height: 24px;"> {{__('lang.mobile')}}<br><br>
+&emsp;&emsp;&emsp;&emsp;&emsp;<img src="https://image.flaticon.com/icons/svg/262/262830.svg" style="width: 24px; height: 24px;"> {{__('lang.rek')}}<br><br>
+&emsp;&emsp;&emsp;&emsp;&emsp;<img src="https://www.ilger.com/images/noreply_email_cos%C3%A8.png" style="width: 24px; height: 24px;">{{__('lang.mail')}}<br><br>
+&emsp;&emsp;&emsp;&emsp;&emsp;<img src="https://static.tildacdn.com/tild3138-3430-4663-b634-313639363034/3b833d721f0d9b139881.png" style="width: 20px; height: 20px;">{{__('lang.whats')}}</h3><br><br>
+</p>
+</div>
+
+<script>
+	$(function() {
+
+	
+	let header = $("#header");
+	let intro=$("#intro");
+	let introH;
+	let scrollPos = $(window).scrollTop();
+
+$(window).on("scroll resize" , function(){
+	introH = intro.innerHeight();
+scrollPos = $(this).scrollTop();
+	chekScroll(scrollPos,introH);
+
+});
+function chekScroll(scrollPos,introH){
+	if(scrollPos>introH){
+		header.addClass("fixed");
+	}else{
+		header.removeClass("fixed");
+	}
+}
+
+$("[data-scroll]").on("click",function(event){
+	event.preventDefault();
+	let elementId = $(this).data('scroll');
+	let elementOffset= $(elementId).offset().top;
+	$("html,body").animate({
+		scrollTop:elementOffset - 90
+	},700);
+});
+
+
+let nav = $("#nav");
+let nav__toggle = $("#nav__toggle");
+nav__toggle.on("click ", function(event){
+	event.preventDefault();
+	nav.toggleClass("show");
+});
+});
+</script>
 </body>
 </html>
