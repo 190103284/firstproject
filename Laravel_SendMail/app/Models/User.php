@@ -44,4 +44,8 @@ class User extends Authenticatable
     public function contact(){
         return $this->hasOne('App\Models\Contact');
     }
+
+    public function houses(){
+        return $this->belongsToMany(Houses::class,'customers');
+    }
 }

@@ -7,6 +7,7 @@ use App\Http\Controllers\SecondController;
 use App\Http\Controllers\ThirdController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\PeopleController;
+use App\Http\Controllers\HousesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -82,3 +83,11 @@ Route::get('/get_contact/{id}',[UserController::class, 'fetchContactByUser']);
 Route::get('/one_to_many', [PeopleController::class,'addPeople']);
 Route::get('/count_schemes/{id}',[PeopleController::class,'addSchemes']);
 Route::get('/get_schemes/{id}',[PeopleController::class , 'getSchemaByUser']);
+
+
+//Many to many Relationship
+Route::get('/addHouse',[HousesController::class,'addHouses']);
+Route::get('/addUser' ,[HousesController::class,'addUser']);
+Route::get('/housesbycustomers/{id}',[HousesController::class,'getAllHousesByCustomers']);
+Route::get('/customersbyhouses/{id}',[HousesController::class,'getAllCustomersByHouses']);
+
