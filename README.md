@@ -1,2 +1,8 @@
-Laravel
+My project 
+![ER Diagram](https://user-images.githubusercontent.com/78777371/115532187-614bbb00-a2b7-11eb-955f-ab46e794f283.png)
+My project is a special project related to the types of houses and home interiors. Let me explain in more detail, this site is for home buyers, that is, any buyer can buy any version of the house in a comfortable, high-quality, reasonable price at a cost-effective way by any buyer with his own control over the houses offered for sale on our site. And now to describe the site itself, our site is unique, understandable to any Internet user, and specially designed to monitor the site. You can easily open the various sections in the main menu. An interesting website that is convenient for any user and does not bore the user. You can also find information about our home sales company on the site. If you need specialists, you can ask for help from qualified specialists of our company. And the site contains all the information about where our company is located, on what days it works, as well as about our mobile phone numbers and e-mails.
+
+And the site has a contact menu for company specialists and consumers to stay in touch. Through this contact menu, you can also send your name and a drawing of your dream home. In this way, the company's specialists will help you choose the house of your choice that you like. Because each customer's request and response is important to us, we have a dedicated database. The database contains information about consumers and their drawings and information sent by them. This information and database is communicated through special relationships and stored in a database.
+The site is convenient and useful for both the seller and the consumer, as well as for the user of the site. 
+
 
