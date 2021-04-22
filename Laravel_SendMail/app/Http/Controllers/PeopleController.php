@@ -10,9 +10,9 @@ class PeopleController extends Controller
 {
     public function addPeople(){
     $people = new People();
-    $people->name = "Erke";
-    $people->surname = "Kerimbekova";
-    $people->email = "erke_kerimbekova@gmail.com";
+    $people->name = "Ermek";
+    $people->surname = "Armanov";
+    $people->email = "ermekarmanovgmail.com";
     $people->save();
     return "People sent the schema successfully !";
     }
@@ -22,8 +22,8 @@ class PeopleController extends Controller
 public function addSchemes($id){
     $people = People::find($id);
     $schemes = new Schemes();
-    $schemes->schema = "We receive first schema!";
-    $schemes->count_of_schemes = "three";
+    $schemes->schema = "We receive third schema!";
+    $schemes->count_of_schemes = "four";
     $people->schemes()->save($schemes);
     return "We received  schema from a client!";
 }

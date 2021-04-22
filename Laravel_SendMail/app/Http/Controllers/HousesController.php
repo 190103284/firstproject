@@ -21,8 +21,8 @@ class HousesController extends Controller
     }
     public function addUser(){
         $user = new User();
-        $user->name = "Zhaniya";
-        $user->email = "eernurzhaniya@gmail.com";
+        $user->name = "Madi";
+        $user->email = "daurenovmadi@gmail.com";
         $user->password = encrypt('secret');
         $user->save();
         $houseids = [3,5];

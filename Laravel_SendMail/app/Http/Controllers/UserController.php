@@ -10,10 +10,10 @@ class UserController extends Controller
 {
     public function insertRecord(){
         $contact = new Contact();
-        $contact->contact_phone = "+77473215687";
+        $contact->contact_phone = "+77772589641";
         $user = new User();
-        $user->name = "Dana";
-        $user->email = "danazhaksylykova@gmail.com";
+        $user->name = "Iliyas";
+        $user->email = "iliyaskuanysh@gmail.com";
         $user->password = encrypt('secret');
         $user->save();
         $user->contact()->save($contact);
